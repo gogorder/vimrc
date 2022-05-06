@@ -73,15 +73,24 @@ set wildmode=list:longest
 " Wildmenu will ignore files with these extensions.
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
+let g:mapleader=','
+
 " PLUGINS ---------------------------------------------------------------- {{{
 
 " Plugin code goes here.
 call plug#begin('~/.vim/plugged')
 
 Plug 'dense-analysis/ale'
-
-  Plug 'preservim/nerdtree'
-
+Plug 'morhetz/gruvbox'
+Plug 'preservim/nerdtree'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'valloric/youcompleteme'
+Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'easymotion/vim-easymotion'
 call plug#end()
 " }}}
 
@@ -89,6 +98,9 @@ call plug#end()
 " MAPPINGS --------------------------------------------------------------- {{{
 
 " Mappings code goes here.
+
+map <F3> : NERDTreeToggle<CR>
+map <Leader> <Plug>(easymotion-prefix)
 
 " }}}
 
@@ -112,3 +124,7 @@ augroup END
 
 " }}}
 
+
+"gruvbox colors
+colorscheme gruvbox
+set background=dark
