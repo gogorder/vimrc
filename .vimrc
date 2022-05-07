@@ -100,7 +100,7 @@ call plug#end()
 
 " Mappings code goes here.
 
-map <F3> : NERDTreeToggle<CR>
+map <C-n> : NERDTreeToggle<CR>
 map <Leader> <Plug>(easymotion-prefix)
 
 " }}}
