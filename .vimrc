@@ -9,6 +9,7 @@ filetype indent on
 syntax on
 
 set number
+set mouse=a
 
 set paste
 
