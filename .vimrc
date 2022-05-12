@@ -58,7 +58,7 @@ set history=1000
 
 
 " Highlight cursor line underneath the cursor horizontally.
-"set cursorline
+set cursorline
 
 " Highlight cursor line underneath the cursor vertically.
 "set cursorcolumn
