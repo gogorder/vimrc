@@ -82,7 +82,10 @@ let g:mapleader=','
 call plug#begin('~/.vim/plugged')
 
 Plug 'dense-analysis/ale'
-Plug 'morhetz/gruvbox'
+
+Plug 'NLKNguyen/papercolor-theme'
+"Plug 'morhetz/gruvbox'
+
 Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -92,6 +95,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
+Plug 'gisphm/vim-gitignore'
+
 call plug#end()
 " }}}
 
@@ -127,5 +132,10 @@ augroup END
 
 
 "gruvbox colors
-colorscheme gruvbox
-set background=dark
+"colorscheme gruvbox
+"set background=light
+
+set t_Co=256
+
+set background=light
+colorscheme PaperColor
