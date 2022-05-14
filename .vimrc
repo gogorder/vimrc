@@ -96,6 +96,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'gisphm/vim-gitignore'
+Plug 'xuhdev/vim-latex-live-preview', {'for': 'tex'}
+
 
 call plug#end()
 " }}}
