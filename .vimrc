@@ -8,6 +8,8 @@ filetype indent on
 
 syntax on
 
+set foldmethod=syntax
+
 set number
 set mouse=a
 
